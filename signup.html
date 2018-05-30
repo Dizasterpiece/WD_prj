@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="signupstyle.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<div id="wrapper">
+	<header class="">
+		<div id="header-div">
+			<h1>TEXAS <span id="ly">HOLD'EM</span> POKER</h1>
+		</div>
+		<div id="chip"><img src="chip.png"></div>
+		<nav id="header-nav">
+			<ul>
+				<li><a href="pokerRESPONSIVE.html">HOME</a></li>
+				<li><a href="#">WATCH</a></li>
+				<li><a href="#">SIGN UP</a></li>
+				<li><a href="#">ABOUT</a></li>
+				<li><a href="#">CONTACTS</a></li>
+			</ul>
+		</nav>
+	</header>
+<div class="row">
+	<aside class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
+		<nav >
+			<h3> More About:</h3>
+			<ul >
+				<li><img src="chip.png"><a href="history1.html">Poker History</a></li>
+				<li><img src="chip.png"><a href="turns2.html">Turn Options</a></li>
+				<li><img src="chip.png"><a href="https://en.wikipedia.org/wiki/Betting_in_poker">Betting in Poker</a></li>
+				<li><img src="chip.png"><a href="https://en.wikipedia.org/wiki/Blind_(poker)">What are Blinds</a></li>
+				<li><img src="chip.png"><a href="https://en.wikipedia.org/wiki/Betting_in_poker#Ante">What is Ante</a></li>
+			</ul>
+			<h3>How To Play Demo:</h3>
+			<iframe  src="https://www.youtube.com/embed/JOomXP-r1wY">
+			</iframe>
+		</nav>
+	</aside>
+
+	<section class="col-lg-9 col-md-8 col-sm-12 col-xs-12">
+		
+<div id="form-holder">
+<form method="post" id="formm">
+		<label><span class="red-star">*</span>Name</label>
+	<div id="name-div" class="field">
+		<input class="styled" id="first-name" type="text" name="Name" placeholder="First name">	
+		<input class="styled" id="last-name" type="text" name="LastName" placeholder="Last name">
+		<p id="p1"></p>
+  	</div>
+		<label><span class="red-star">*</span>Choose your username</label>
+	<div class="field">
+		<input class="styled" id="username" type="input" name="username" >
+		<p id="p3"></p>
+	</div>	
+		<label><span class="red-star">*</span>Create a password</label>
+	<div class="field">
+		<input class="styled password" type="password" id="pass1" name="pass">
+		<p id="p4"></p>
+	</div>
+	<div class="field">
+		<label><span class="red-star">*</span>Confirm you password</label>
+		<input class="styled password" id="pass2" type="password" name="passcheck">
+		<p id="p5"></p>
+	</div>
+		<label>Birthday</label>
+	<div id="date-div" class="field">
+		<input  id="birthday" class="styled" type="date" name="birthday" max="2018-12-31" min="1900-01-01" >
+	</div>
+		<label>Gender</label>
+	<div class="field">
+		<input  id="male-radio" type="radio" name="gender" value="male"><span class="ly">Male</span>
+		<input id="female-radio" type="radio" name="gender" value="female"><span class="ly">Female<img id="flower" src="flower.png"></span>
+	</div>
+		<label>Mobile Phone</label>
+	<div class="field">
+		<input class="styled" type="text" id="phone" name="phoneNumber" value="+359">
+		<p id="p6"></p>
+	</div>
+		<label><span class="red-star">*</span>Your current email adress</label>
+	<div class="field">
+		<input class="styled" type="email" id="email" name="emaill" placeholder="mymail@mail.com">
+		<p id="p7"></p>	
+	</div>
+	<label>Message: </label>
+	<div class="field">
+		<textarea class="styled" id="texta" placeholder="Leave a message"></textarea>
+	</div>
+	<div id="cbox-div" class="field">
+		<input id="cbox" type="checkbox" name="checkbox" required><span class="red-star">*</span><span class="ly">I accept the rules.</span>
+	</div>
+	<input id="reset-button" type="reset" name="reset" value="Reset">
+	<input id="submit-button" type="submit" name="submit" value="Submit">
+</form>
+</div>
+
+	</section>
+
+	<footer class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		<div>&copy;All Copyrights Reserved | Texas Hold'em Poker</div>
+	</footer>
+</div>
+</body>
+</html>

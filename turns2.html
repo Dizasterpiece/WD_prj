@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="turnStyle.css">
+</head>
+<body>
+<div id="wrapper">
+	<header class="">
+		<div id="header-div">
+			<h1>TEXAS <span>HOLD'EM</span> POKER</h1>
+		</div>
+		<div id="chip"><img src="chip.png" width="50px"></div>
+		<nav id="header-nav">
+			<ul>
+				<li><a href="pokerRESPONSIVE.html">HOME</a></li>
+				<li><a href="#">WATCH</a></li>
+				<li><a href="signup.html">SIGN UP</a></li>
+				<li><a href="#">ABOUT</a></li>
+				<li><a href="#">CONTACTS</a></li>
+			</ul>
+		</nav>
+	</header>
+<div class="row">
+	<aside class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
+		<nav >
+			<h3> More About:</h3>
+			<ul >
+				<li><img src="chip.png"><a href="history1.html">Poker History</a></li>
+				<li><img src="chip.png"><a href="#">Turn Options</a></li>
+				<li><img src="chip.png"><a href="https://en.wikipedia.org/wiki/Betting_in_poker">Betting in Poker</a></li>
+				<li><img src="chip.png"><a href="https://en.wikipedia.org/wiki/Blind_(poker)">What are Blinds</a></li>
+				<li><img src="chip.png"><a href="https://en.wikipedia.org/wiki/Betting_in_poker#Ante">What is Ante</a></li>
+			</ul>
+			<h3>How To Play Demo:</h3>
+			<iframe  src="https://www.youtube.com/embed/JOomXP-r1wY">
+			</iframe>
+		</nav>
+	</aside>
+
+<section class="col-lg-9 col-md-8 col-sm-12 col-xs-12">
+
+		<h2>Turn Options</h2>
+		<button class="accordion">Checking</button>
+		<div class="panel">
+			<p>Checking is what one does if they wish to pass the action to the next player, but keep their cards. Checking gives one the option to raise, call, fold or even check again later on in the betting round. When one checks, they do not have to put anything into the pot unless they are playing in a game with a big blind and/or a small blind. If the action is checked to a player in the blinds, they have the option to check or raise.The universal sign for checking in poker is to tap the table with one's hand.</p>
+		</div>
+
+		<button class="accordion">Opening</button>
+		<div class="panel">
+			<p>Opening is what one does when they are essentially starting the round of betting in a poker hand. When one opens, it has either been checked to them or they are the first person to act. Many new players say 'raise' mistakenly in this situation, where the standard should be to say 'bet' or 'open.' Players that open will subsequently be faced with either a call, raise or folds from the other players at the table.</p>
+		</div>
+
+		<button class="accordion">Raising</button>
+		<div class="panel">
+			<p>Raising is the action one takes when they want to increase the opening bet. After raising it up, one will have to deal with either a call, fold or re-raise from the other players in the hand. Raising is associated with either having a strong hand or trying to win the pot on the spot with a well timed bluff. Re-raising is exactly what it sounds like. It is the action of increasing a raise already put in by an opposing player.</p>
+		</div>
+
+		<button class="accordion">Folding</button>
+		<div class="panel">
+			<p>Folding is the act of ending participation in a hand. No more bets are required to go into the pot by someone once they fold. Players can fold when it is their turn to act and they do not wish to continue. Most poker players do lots of folding preflop. The act of folding the cards themselves involves tossing them face down towards the dealer, who will put them into the muck (pile of folded cards).</p>
+		</div>
+
+</section>
+	<footer class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+		<div>&copy;All Copyrights Reserved | Texas Hold'em Poker</div>
+	</footer>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display == "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
+</script>
+</body>
+</html>
